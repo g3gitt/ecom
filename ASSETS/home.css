@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-table .header {
-  background-color: #ffd023;
-  height: 48px; 
-}
-
 /*ticker*/
 .ticker {
 
@@ -47,6 +41,7 @@ table .header {
   100% { opacity: 0; }
 }
 
+
 .scroll{
   display:flex;
   overflow-x:auto;
@@ -57,11 +52,9 @@ table .header {
  
   .new-arrivals {
      flex:0 0 auto;
-  background: #fff;
-  border-radius: 8px;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 10px;
-  border: 2px solid green;
+  padding: 5px;
 }
 
 
@@ -70,7 +63,6 @@ table .header {
     height: 100%;
     object-fit: cover;
     margin: 5px;
-     border: 2px solid rgb(209, 62, 13);
   }
 
 .new-arrivals img {
