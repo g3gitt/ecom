@@ -53,4 +53,4 @@ include_once __DIR__ . '/../CONTROLLER/ProductController.php';
     </tr>
     
 
-      <td>
+</table>

@@ -61,7 +61,9 @@
                      
                           <?php 
                               foreach ($categories as $c) {
+                               echo' <a href="index.php?category_id='.$c['category_id'].'">';
                               echo '<img src="' . htmlspecialchars($c['img_url']) . '" alt="' . htmlspecialchars($c['category_name']) . '">';
+                              echo'</a>';
                             }
                      ?>
                     </div>

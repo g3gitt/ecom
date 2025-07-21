@@ -48,7 +48,9 @@
   scrollbar-width: none;
 
 }
-
+.scroll a{
+  text-decoration: none;
+}
  
   .new-arrivals {
      flex:0 0 auto;
