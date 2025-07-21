@@ -1,4 +1,11 @@
 <?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: VIEW/login.php");
+    exit;
+}
+
+
 require_once 'CONTROLLER\ProductController.php';
 
 $controller = new ProductController();
@@ -10,3 +17,4 @@ if (isset($_GET['product_id'])) {
     $controller->showHomePage();
 }
 ?>
+

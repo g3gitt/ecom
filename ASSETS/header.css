@@ -2,8 +2,16 @@
     background-color: red;
 } */
 
-table .header {
-  background-color: #ffd023;
-  height: 48px; 
-}
 
+#custom-navbar {
+  background-color: #ffd023 !important;
+
+}
+.user-toggle {
+  margin-right:30px;
+}
+.logout-menu {
+    max-width: 100px;
+  right: 2px !important;
+  left: auto !important;
+}

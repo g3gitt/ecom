@@ -5,13 +5,14 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+
 body {
   background-color: #fffef8;
   color: #333;
 
 }
 
-/* Product Card Styling */
+
 .product-card {
   display: flex;
   flex-wrap: wrap;
@@ -73,11 +74,11 @@ body {
   border-radius: 4px;
 }
 
-.product-details > div,
-.product-details p {
+.product-details * {
   margin-bottom: 8px;
   font-size: 16px;
 }
+
 
 .description {
   margin-top: 12px;
