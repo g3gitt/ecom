@@ -1,3 +1,6 @@
+<?php
+ include_once 'CONTROLLER/ProductController.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
     <title>Online Fashion Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="ASSETS/home.css">
 </head>
 <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -17,7 +20,7 @@
               <nav class="navbar navbar-expand-lg" id="custom-navbar">
                 <div class="container-fluid">
                     <!-- Brand -->
-                    <a class="navbar-brand" id="brand-logo" href="#">Saradhas</a>
+                    <a class="navbar-brand" id="brand-logo" href="#">G Style</a>
 
                     <!-- Toggler -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -82,15 +85,46 @@
         <!--body-->
          <tr>
             <td>
-                 body
+                   <h2>New Arrivals</h2>
+           <div class="scroll">
+  <div class="new-arrivals">
+    <?php foreach ($products as $p): ?>
+      <div class="product-card">
+
+       <a href="index.php?product_id=<?= $p['product_id'] ?>">
+
+
+          <img src="<?= $p['img_url'] ?>" alt="<?= htmlspecialchars($p['product_name']) ?>">
+    </a>
+    <?php endforeach; ?>
+  </div>
+</div>
+
+<!-- Trending Categories -->
+                <h2>Trending Categories</h2>
+               
+                    <div class="cat">
+                     
+                          <?php 
+                              foreach ($categories as $c) {
+                              echo '<img src="' . htmlspecialchars($c['img_url']) . '" alt="' . htmlspecialchars($c['category_name']) . '">';
+                            }
+                     ?>
+                    </div>
+              
+
+
             </td>
         </tr>
           <!--footer-->
         <tr>
-            <td>
-                 footer
-            </td>
-        </tr>
+  <td style="background-color: #222; color: #fff; padding: 20px; text-align: center; font-size: 14px;">
+    &copy; 2025 G Style. All rights reserved. |
+    <a href="#" style="color: #ffd023; text-decoration: none;">Privacy Policy</a> |
+    <a href="#" style="color: #ffd023; text-decoration: none;">Contact Us</a>
+  </td>
+</tr>
+
     </table>
 </body>
 </html>

@@ -33,7 +33,7 @@ table .header {
   animation: ticker 10s linear infinite;
 }
 
-/* 5 items, each visible for 2s */
+
 .ticker-item:nth-child(1) { animation-delay: 0s; }
 .ticker-item:nth-child(2) { animation-delay: 2s; }
 .ticker-item:nth-child(3) { animation-delay: 4s; }
@@ -47,6 +47,48 @@ table .header {
   100% { opacity: 0; }
 }
 
+.scroll{
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width: none;
+
+}
+
+ 
+  .new-arrivals {
+     flex:0 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border: 2px solid green;
+}
 
 
+  .new-arrivals img {
+    width: 290px;
+    height: 100%;
+    object-fit: cover;
+    margin: 5px;
+     border: 2px solid rgb(209, 62, 13);
+  }
+
+.new-arrivals img {
+  transition: transform 0.3s ease;
+}
+.new-arrivals img:hover {
+  transform: scale(1.05);
+}
+
+.cat{
+  margin:10px;
+  display: inline-block;
+}
+.cat img{
+ 
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+
+}
 
