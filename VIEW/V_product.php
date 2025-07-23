@@ -60,7 +60,11 @@
       <div class="stock">Availability: <?= $product['stock_status'] == 'in_stock' ? 'In Stock' : 'Out of Stock' ?></div>
       <p class="description"><?= htmlspecialchars($product['description']) ?></p>
 
-      <button class="buy-btn">Add to Cart</button>
+<form method="POST" action="CONTROLLER/cartController.php?action=addCart">
+  <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
+  <button type="submit" class="buy-btn">Add to Cart</button>
+</form>
+
     </div>
   </div>
 
