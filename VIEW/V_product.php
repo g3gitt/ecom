@@ -65,6 +65,11 @@
   <button type="submit" class="buy-btn">Add to Cart</button>
 </form>
 
+<form method="POST" action="CONTROLLER/likeController.php?action=addLike">
+  <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
+  <button type="submit" class="buy-btn">Add to Like</button>
+</form>
+
     </div>
   </div>
 

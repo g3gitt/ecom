@@ -53,8 +53,8 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown d-flex">
              <div class="icon-bar d-flex align-items-right me-3">
-      <a class="nav-link me-2" href="like.php"><i class="bi bi-heart fs-5"></i></a>
-      <a class="nav-link" href="/ecom/VIEW/V_cart.php"><i class="bi bi-cart fs-5"></i></a>
+      <a class="nav-link me-2" href="/ecom/VIEW/V_like.php">like<i class="bi bi-heart fs-5"></i></a>
+      <a class="nav-link" href="/ecom/VIEW/V_cart.php">cart<i class="bi bi-cart fs-5"></i></a>
     </div>
             <a class="nav-link dropdown-toggle user-toggle" href="#" role="button" data-bs-toggle="dropdown" >
               <?php
